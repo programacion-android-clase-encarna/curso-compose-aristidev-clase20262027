@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.cursoandroidcompose.composables.features.imc.IMCScreen
+import com.example.cursoandroidcompose.composables.features.imc.MenuScreen
 import com.example.cursoandroidcompose.composables.modulo1_vistasprincipales.ButtonEjemplo2
 import com.example.cursoandroidcompose.composables.modulo4_TextField.CounterScreen_Example4
 import com.example.cursoandroidcompose.composables.modulo4_TextField.Ejercicio2_TextField_StateHoisting
@@ -23,7 +24,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CursoAndroidComposeTheme {
-                IMCScreen()
+                MenuScreen(modifier = Modifier.fillMaxWidth())
+                //IMCScreen()
                 //Ejercicio2_TextField_StateHoisting()
             // CounterScreen_Example4(modifier = Modifier.fillMaxWidth())
             //counterScreen()

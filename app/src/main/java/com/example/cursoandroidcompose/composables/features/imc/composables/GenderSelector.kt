@@ -27,7 +27,8 @@ import com.example.cursoandroidcompose.ui.theme.colorUnSelectedCard
 
 @Preview
 @Composable
-fun GenderSelector(isMaleSelected: Boolean = true, onGenderSelected: (Boolean) -> Unit = {}) {
+fun GenderSelector(isMaleSelected: Boolean = true,
+                   onGenderSelected: (Boolean) -> Unit = {}) {
     Row(
         modifier = Modifier
             .fillMaxWidth()

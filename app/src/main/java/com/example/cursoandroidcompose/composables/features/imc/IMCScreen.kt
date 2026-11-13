@@ -11,25 +11,36 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.example.cursoandroidcompose.composables.features.imc.composables.CounterSelector
 import com.example.cursoandroidcompose.composables.features.imc.composables.GenderSelector
 import com.example.cursoandroidcompose.composables.features.imc.composables.HeightSelector
 
 @Composable
 fun IMCScreen() {
-    var isMaleSelected by remember{ mutableStateOf(true) }
-    var height by remember {mutableStateOf(160f)}
+    var isMaleSelected by remember { mutableStateOf(true) }
+    var height by remember { mutableStateOf(160f) }
+    var age by remember { mutableStateOf(value = 18) }
 
-    Column(Modifier.fillMaxSize()){
-        GenderSelector(isMaleSelected= isMaleSelected,
-            onGenderSelected= {
-                isMaleSelected=it
+    var weight by remember { mutableStateOf(value = 60) }
+    Column(Modifier.fillMaxSize()) {
+        GenderSelector(
+            isMaleSelected = isMaleSelected,
+            onGenderSelected = {
+                isMaleSelected = it
             }
         )
 
-        HeightSelector(height = height, onHeightChange ={height = it})
+        HeightSelector(height = height, onHeightChange = { height = it })
+
+        CounterSelector(age=age, onPlusAgeSelected={age++},onMinusAgeSelected={age--},
+            weight=weight, onPlusWeightSelected={weight++},onMinusWeightSelected={weight--})
+
+
     }
 
 }
+
+
 
 
 

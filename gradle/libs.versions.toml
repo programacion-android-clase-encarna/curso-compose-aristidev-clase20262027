@@ -28,7 +28,7 @@ androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-te
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime",version.ref="navigation3"}
 androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui",version.ref="navigation3"}
-kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-code"}
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

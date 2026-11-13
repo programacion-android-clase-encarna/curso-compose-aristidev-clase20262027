@@ -16,6 +16,7 @@ import com.example.cursoandroidcompose.composables.modulo4_TextField.CounterScre
 import com.example.cursoandroidcompose.composables.modulo4_TextField.Ejercicio2_TextField_StateHoisting
 import com.example.cursoandroidcompose.composables.modulo4_TextField.TextFieldExample_1
 import com.example.cursoandroidcompose.composables.modulo4_TextField.counterScreen
+import com.example.cursoandroidcompose.core.AppNavigation
 import com.example.cursoandroidcompose.ui.theme.CursoAndroidComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +25,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CursoAndroidComposeTheme {
-                MenuScreen(modifier = Modifier.fillMaxWidth())
+                AppNavigation()
+                //MenuScreen(modifier = Modifier.fillMaxWidth())
                 //IMCScreen()
                 //Ejercicio2_TextField_StateHoisting()
             // CounterScreen_Example4(modifier = Modifier.fillMaxWidth())

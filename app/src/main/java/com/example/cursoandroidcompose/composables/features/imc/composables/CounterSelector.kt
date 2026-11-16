@@ -2,8 +2,11 @@ package com.example.cursoandroidcompose.composables.features.imc.composables
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Card
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun CounterSelector(
@@ -15,14 +18,17 @@ fun CounterSelector(
     onMinusWeightSelected: () -> Int
 ) {
     Row(modifier = Modifier.fillMaxWidth()){
-        CounterCard(title="Peso", value=weight,onPlus={onPlusWeightSelected()},nMinus={onMinusWeightSelected()})
+       // CounterCard(title="Peso", value=weight,onPlus={onPlusWeightSelected()},nMinus={onMinusWeightSelected()})
 
-        CounterCard(title="Edad", value=age,onPlus={onPlusAgeSelected()},nMinus={onMinusAgeSelected()})
+       // CounterCard(title="Edad", value=age,onPlus={onPlusAgeSelected()},nMinus={onMinusAgeSelected()})
     }
 
 }
 
 @Composable
-fun CounterCard(title: String, value: Int, onPlus: () -> Int, nMinus: () -> Int) {
-    TODO("Not yet implemented")
+fun CounterCard(modifier:Modifier, title: String, value: Int, onPlus: () -> Int, nMinus: () -> Int) {
+    Card(modifier.height(180.dp
+    )){
+
+    }
 }

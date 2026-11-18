@@ -4,6 +4,8 @@ import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
 @Serializable
+data class IMCResult(val result: Float): NavKey
+@Serializable
 data object Menu: NavKey
 
 @Serializable

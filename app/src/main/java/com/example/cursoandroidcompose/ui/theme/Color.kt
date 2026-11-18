@@ -2,6 +2,7 @@ package com.example.cursoandroidcompose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val AppBackground=Color(0xFF131D4B)
 val colorSelectedCard = Color(0xFF4287f5)
 val colorUnSelectedCard = Color(0xFFabc8f7)
 val Purple80 = Color(0xFFD0BCFF)
